@@ -1,0 +1,31 @@
+page-reminder-list {
+
+  small {
+    color: #747474;
+  }
+
+  ion-list.list {
+    margin-top: 15px;
+  }
+
+  ion-item-sliding {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px #dfdfdf;
+  } 
+
+  ion-item-options {
+    button {
+      width: 100px;
+      
+      ion-icon.icon {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  ion-item.item:last-child {
+    border-bottom: 0;
+  }
+
+}

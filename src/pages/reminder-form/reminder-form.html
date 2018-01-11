@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title text-capitalize>{{ mode }} Reminder</ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="onClick(mode, reminder)">
+        <ion-icon name="checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item no-padding color="light-gray">
+    <ion-label stacked>Reminder</ion-label>
+    <ion-input 
+      [(ngModel)]="reminder.reminder"></ion-input>
+  </ion-item>
+
+  <ion-item no-padding color="light-gray">
+    <ion-label stacked>Date and time</ion-label>
+    <ion-datetime 
+    placeholder="Reminder Date"
+    [displayFormat]="dateFormat"
+    [(ngModel)]="reminder.date"></ion-datetime>
+  </ion-item>
+
+</ion-content>
